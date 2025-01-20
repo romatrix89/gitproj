@@ -13,7 +13,12 @@ public class UserController {
         this.userService = userService;
     }
 
-    void createUser(Users user) {
+    public void createUser(Users user) {
         userService.createUser(user);
     }
+
+    public void getUserById(Long id){
+        System.out.println(id);
+    }
+
 }
