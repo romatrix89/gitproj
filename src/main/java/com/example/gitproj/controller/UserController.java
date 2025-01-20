@@ -13,9 +13,14 @@ public class UserController {
         this.userService = userService;
     }
 
-    void createUser(Users user) {
+    public void createUser(Users user) {
         userService.createUser(user);
         System.out.println(user);
         System.out.println("Окончание метода");
     }
+
+    public void getUserById(Long id){
+        System.out.println(id);
+    }
+
 }
