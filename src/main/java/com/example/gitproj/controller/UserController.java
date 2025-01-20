@@ -15,6 +15,8 @@ public class UserController {
 
     public void createUser(Users user) {
         userService.createUser(user);
+        System.out.println(user);
+        System.out.println("Окончание метода");
     }
 
     public void getUserById(Long id){
